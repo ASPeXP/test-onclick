@@ -3,6 +3,7 @@ import {useDispatch, useSelector } from 'react-redux'
 import {GetRandomSuccess, isLoadingRandomNumber} from './finderSlice'
 
 
+
 export function Finder() {
    
    const {number, isLoading, error } = useSelector( (state) => state.finder)
