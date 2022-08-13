@@ -9,7 +9,6 @@ import  Expenses  from './routes/expenses';
 import  Invoices  from './routes/invoices';
 import Invoice from './routes/invoice';
 import { Finder } from './finder'
-import { CookieProvider } from 'react-cookie';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

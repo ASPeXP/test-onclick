@@ -1,6 +1,5 @@
 import React from 'react'
 import {useSelector } from 'react-redux'
-import { useCookies } from 'react-cookie'
 
 function setCookie(cookieName, cookieValue, expiryHour) {
   let d = new Date();
@@ -43,7 +42,6 @@ function getCookie(cookieName) {
 export default function Expenses() {
   const {number, isLoading, error } = useSelector( (state) => state.finder)
    console.log(number)
-   const [cookies, setCookie] = useCookies(['name']);
   return (
     <>
     <div>Number in expense: {number}</div>

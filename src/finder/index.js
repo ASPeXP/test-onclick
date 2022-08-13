@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {useDispatch, useSelector } from 'react-redux'
 import {GetRandomSuccess, isLoadingRandomNumber} from './finderSlice'
-import { useCookies } from 'react-cookie'
 
 function setCookie(cookieName, cookieValue, expiryHour) {
   let d = new Date();
